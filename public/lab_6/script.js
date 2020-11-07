@@ -1,3 +1,6 @@
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
+
 function getRandomIntInclusive(min, max) {
   const min1 = Math.ceil(min);
   const max1 = Math.floor(max);
