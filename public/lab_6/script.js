@@ -22,8 +22,8 @@ function sortByKey(org, compare, key) {
 }
 
 document.body.addEventListener('submit', async (e) => {
-  e.preventDefault(); 
-  const form = $(e.target).serializeArray(); 
+  e.preventDefault();
+  const form = $(e.target).serializeArray();
   fetch('/api', {
     method: 'POST',
     headers: {
@@ -33,7 +33,7 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      console.log(fromServer)
+      console.log(fromServer);
       if (document.querySelector('.flex-inner')) {
         document.querySelector('.flex-inner').remove();
       }

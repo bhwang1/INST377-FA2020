@@ -1,7 +1,7 @@
 function getRandomIntInclusive(min, max) {
   const min1 = Math.ceil(min);
   const max1 = Math.floor(max);
-  return Math.floor(Math.random() * (max1 - min1 + 1) + min1); 
+  return Math.floor(Math.random() * (max1 - min1 + 1) + min1);
 }
 
 function range(int) {
@@ -33,7 +33,7 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      console.log(fromServer)
+      console.log(fromServer);
       if (document.querySelector('.flex-inner')) {
         document.querySelector('.flex-inner').remove();
       }
